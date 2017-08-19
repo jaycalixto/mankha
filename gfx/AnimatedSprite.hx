@@ -7,8 +7,8 @@ import haxe.ds.Vector;
 
 class AnimatedSprite extends Sprite {
 
-	private var frameW:Int;
-	private var frameH:Int;
+	public var frameW(default, null):Int;
+	public var frameH(default, null):Int;
 	private var frameIndex:Int;
 	private var frames:Vector<AnimationFrame>;
 	private var lastTime:Float;

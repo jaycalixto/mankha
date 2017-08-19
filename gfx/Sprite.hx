@@ -7,7 +7,7 @@ import kha.math.Vector2;
 
 class Sprite {
 
-	private var position:Vector2;
+	public var position:Vector2;
 	private var image:Image;
 
 	public var isVisible(default, default):Bool;
@@ -18,11 +18,6 @@ class Sprite {
 		image = img;
 		color = Color.White;
 		isVisible = true;
-	}
-
-	public function setPosition(x:Int, y:Int){
-		position.x = x;
-		position.y = y;
 	}
 
 	public function draw(g:Graphics) {
