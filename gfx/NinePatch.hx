@@ -31,12 +31,15 @@ class NinePatch {
 		isVisible = true;
 
 		var w = img.width - 2;
-		var h = img.height - 2;		
+		var h = img.height - 2;
 
-		var firstBlackX = new Point(6, 0);
-		var lastBlackX = new Point(25,0);
-		var firstBlackY = new Point(0, 6);
-		var lastBlackY = new Point(0, 25);
+		var thirdX = Std.int(w/3);
+		var thirdY = Std.int(h/3);
+
+		var firstBlackX = new Point(thirdX, 0);
+		var lastBlackX = new Point(2 * thirdX,0);
+		var firstBlackY = new Point(0, thirdY);
+		var lastBlackY = new Point(0, 2 * thirdY);
 
 		//can't read the pixels in this version of kha :(
 		// for (i in 1...w) {			
