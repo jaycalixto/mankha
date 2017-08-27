@@ -7,6 +7,7 @@ import kha.math.Vector2;
 
 class Sprite {
 
+	public var velocity:Vector2;
 	public var position:Vector2;
 	private var image:Image;
 
@@ -15,6 +16,7 @@ class Sprite {
 
 	public function new(img:Image){
 		position = new Vector2();		
+		velocity = new Vector2();
 		image = img;
 		color = Color.White;
 		isVisible = true;
