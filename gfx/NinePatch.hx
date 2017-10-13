@@ -122,9 +122,13 @@ class NinePatch {
 			g.drawScaledSubImage(image, right.x, right.y, right.width, right.height,
 				rect.x + rect.width - right.width, rect.y +  topRight.height,
 				right.width, rect.height - topRight.height - bottomRight.height);
+
+			//bottom
 			g.drawScaledSubImage(image, bottom.x, bottom.y, bottom.width, bottom.height,
-				rect.x + bottomRight.width, rect.y + rect.height - bottom.height,
+				rect.x + bottomLeft.width, rect.y + rect.height - bottom.height,
 				rect.width - bottomLeft.width - bottomRight.width, bottom.height);
+
+			// center
 			g.drawScaledSubImage(image, center.x, center.y, center.width, center.height,
 				rect.x + left.width, rect.y + top.height, rect.width - left.width - right.width,
 				rect.height - top.height - bottom.height);
